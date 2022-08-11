@@ -1,0 +1,175 @@
+body {
+    background-color: #0D192C;
+    color: #8BACD9;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #15263F;
+    width: 327px;
+    border-radius: 15px;
+    padding: 24px;
+}
+
+#image-container {
+    position: relative;
+    width: 100%;
+}
+
+#product-image {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 255, 248, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#overlay:hover {
+    opacity: 1;
+}
+
+#name {
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+#description {
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+#purchase-info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#eth-icon {
+    height: 18px;
+    width: 11px;
+}
+#price {
+    color: #00FFF8;
+    font-weight: 600;
+}
+
+#eth-info {
+    display: flex;
+    align-items: center;
+    gap: 6.5px;
+}
+
+#time-info {
+    display: flex;
+    align-items: center;
+    gap: 7.7px;
+
+}
+
+#clock-icon {
+    height: 13.33px;
+    width: 13.33px;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #8BACD9;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+}
+
+#creator-info-container {
+    display: flex;
+    gap: 16px;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#creator-info-container img {
+    height: 33px;
+    width: 33px;
+    border: 1pt white solid;
+    border-radius: 50px;
+}
+
+span {
+    color: white;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 50px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+#name:hover, #name:focus, span:hover, span:focus {
+    color: #00FFF8;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 376px) {
+    body {
+        font-size: 16px;
+    }
+    body article {
+        width: 350px; /*Ask about why article doesnt work on its own to change this*/
+    }
+
+    #name {
+        margin-bottom: 16px;
+    }
+
+    #description {
+        margin-bottom: 24px;
+    }
+
+    article section #clock-icon {
+        height: 25px;
+        width: 25px;
+    }
+    #purchase-info-container {
+        margin-bottom: 24px;
+    }
+
+    #creator-info-container {
+        margin-bottom: 8px;
+    }
+
+  }
